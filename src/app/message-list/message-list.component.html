@@ -1,0 +1,17 @@
+<!-- 0719 -->
+<!-- without messages there is error -->
+<!-- <div *ngFor="let message of messages">
+  {{message.title}}
+  <br> {{message.message}}
+</div> -->
+
+
+<!-- ref: getbuoostrap.com  -->
+
+<div class="container">
+  <h2>Messages:</h2>
+  <div class="card text-white bg-dark mb-3" style="max-width: 30rem;" *ngFor="let message of messages">
+    <div class="card-header">{{message.title}}</div>
+    <div class="card-body">{{message.message}}</div>
+  </div>
+</div>
